@@ -7,7 +7,48 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <meta name="description" content="Motorcycle Guide Center, premium guides, maintenance, and resources for discerning riders." />
+
+  <style>
+  
+    body,
+    .site-title,
+    .hero-title,
+    .section-title,
+    .showcase-card h5,
+    .feature h5,
+    strong,
+    h1, h2, h3, h4, h5 {
+      color: #ffffff !important;
+    }
+
+    .muted,
+    .lead,
+    .feature p,
+    .showcase-card p,
+    .site-sub,
+    .trust-list li,
+    p {
+      color: #e6e6e6 !important;
+    }
+
+    .eyebrow {
+      color: #adffad !important;
+      text-shadow: 0 0 10px rgba(0,255,42,0.4);
+    }
+
+    .hero-title {
+      text-shadow: 0 0 20px rgba(0,255,42,0.5);
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: #f1f1f1 !important;
+    }
+
+    /* Buttons remain unchanged but readable */
+  </style>
 </head>
+
 <body class="page page-index">
   <a class="skip" href="#main">Skip to content</a>
 
@@ -15,13 +56,19 @@
     <div class="container header-grid">
       <div class="brand">
         <svg class="brand-mark" width="46" height="46" viewBox="0 0 24 24" aria-hidden="true">
-          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff7a2d"/><stop offset="1" stop-color="#ff4b00"/></linearGradient></defs>
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#00ff2a" />
+              <stop offset="1" stop-color="#66ff66" />
+            </linearGradient>
+          </defs>
           <circle cx="12" cy="12" r="10" fill="url(#g)"></circle>
-          <path d="M7 14c1.5-3 6-6 10-6" stroke="#fff" stroke-width="1.2" stroke-linecap="round" fill="none"></path>
+          <path d="M7 14c1.5-3 6-6 10-6" stroke="#000" stroke-width="1.2" stroke-linecap="round" fill="none"></path>
         </svg>
+
         <div>
           <h1 class="site-title">Motorcycle Guide Center</h1>
-          <p class="site-sub">Luxury rider resources, curated, tested, and refined</p>
+          <p class="site-sub">High-performance rider resources with Kawasaki-grade precision</p>
         </div>
       </div>
 
@@ -37,7 +84,10 @@
       <div class="header-cta">
         <a href="types.html" class="btn btn-primary">Explore Bikes</a>
         <a href="#" class="icon-btn" aria-label="Search">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="6"/><path d="M21 21l-4.35-4.35"/></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="6" />
+            <path d="M21 21l-4.35-4.35" />
+          </svg>
         </a>
       </div>
     </div>
@@ -47,9 +97,10 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h2 class="eyebrow">Concierge-grade motorcycle knowledge</h2>
-          <h3 class="hero-title">Engineered for the rider who expects more</h3>
-          <p class="lead">Comprehensive type guides, best-in-class maintenance procedures, and vetted resources, crafted with elegant design and meticulous testing.</p>
+          <h2 class="eyebrow">Elite motorcycle intelligence</h2>
+          <h3 class="hero-title">Engineered for riders who demand precision</h3>
+          <p class="lead">Advanced motorcycle guides, mechanic-validated maintenance, and performance upgrades — all wrapped in a neon-sharp Kawasaki aesthetic.</p>
+
           <div class="hero-actions">
             <a href="types.html" class="btn btn-primary large">Discover Types</a>
             <a href="maintenance.html" class="btn btn-outline">Maintenance Guides</a>
@@ -57,22 +108,31 @@
 
           <ul class="trust-list">
             <li><strong>200+</strong> model comparisons</li>
-            <li><strong>3000+</strong> maintenance hours analyzed</li>
-            <li><strong>100%</strong> rider-first recommendations</li>
+            <li><strong>3000+</strong> hours of mechanic analysis</li>
+            <li><strong>100%</strong> performance-focused recommendations</li>
           </ul>
         </div>
 
         <div class="hero-media" aria-hidden="true">
           <svg class="hero-illustration" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <defs>
-              <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f2f2"/></linearGradient>
-              <linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#ff7a2d"/><stop offset="1" stop-color="#ff4b00"/></linearGradient>
+              <linearGradient id="bg" x1="0" x2="1">
+                <stop offset="0" stop-color="#0a0a0a" />
+                <stop offset="1" stop-color="#000000" />
+              </linearGradient>
+
+              <linearGradient id="accent" x1="0" x2="1">
+                <stop offset="0" stop-color="#00ff2a" />
+                <stop offset="1" stop-color="#66ff66" />
+              </linearGradient>
             </defs>
-            <rect width="100%" height="100%" rx="20" fill="url(#bg)"/>
+
+            <rect width="100%" height="100%" rx="20" fill="url(#bg)" />
+
             <g transform="translate(50,30)" opacity="0.98">
-              <rect x="0" y="0" width="700" height="400" rx="16" fill="#fff" stroke="#eee"/>
-              <path d="M60 330 C 120 260, 300 230, 520 270 C 640 290, 680 150, 720 90" stroke="url(#accent)" stroke-width="8" fill="none" stroke-linecap="round"/>
-              <circle cx="520" cy="270" r="40" fill="#fff" stroke="url(#accent)" stroke-width="6"/>
+              <rect x="0" y="0" width="700" height="400" rx="16" fill="#000" stroke="#003300" />
+              <path d="M60 330 C 120 260, 300 230, 520 270 C 640 290, 680 150, 720 90" stroke="url(#accent)" stroke-width="8" fill="none" stroke-linecap="round" />
+              <circle cx="520" cy="270" r="40" fill="#000" stroke="url(#accent)" stroke-width="6" />
             </g>
           </svg>
         </div>
@@ -80,19 +140,22 @@
     </section>
 
     <section class="section container features">
-      <h4 class="section-title">What makes us premium</h4>
+      <h4 class="section-title">Premium features engineered for performance</h4>
+
       <div class="feature-grid">
         <article class="feature">
-          <h5>Design-led guides</h5>
-          <p>Readable, scannable guides with photography, clean layouts, and specifications presented clearly.</p>
+          <h5>Precision-designed guides</h5>
+          <p>Engineered layouts with superior readability and clarity.</p>
         </article>
+
         <article class="feature">
-          <h5>Mechanic-tested procedures</h5>
-          <p>Maintenance instructions validated by certified mechanics and real-world testing.</p>
+          <h5>Mechanic-verified procedures</h5>
+          <p>Real-world testing ensures durability, reliability, and peak performance.</p>
         </article>
+
         <article class="feature">
-          <h5>Rider concierge</h5>
-          <p>Bespoke suggestions for gear, accessories and upgrades based on riding profile.</p>
+          <h5>Performance concierge</h5>
+          <p>Smart upgrade and tuning advice based on your riding goals.</p>
         </article>
       </div>
     </section>
@@ -101,12 +164,13 @@
       <div class="showcase-grid">
         <div class="showcase-card">
           <h5>Featured: The Modern Sport Tourer</h5>
-          <p>Luxury touring ergonomics with sport-bike pulse, our deep-dive includes luggage, suspension tuning and long-run comfort tests.</p>
+          <p>Sport DNA fused with comfort — explore luggage, suspension tuning, and long-distance performance.</p>
           <a href="types.html" class="btn btn-link">Read the feature</a>
         </div>
+
         <div class="showcase-card">
           <h5>Maintenance checklist</h5>
-          <p>Our curated pre-ride checklist and seasonal maintenance planner to extend life and performance.</p>
+          <p>Optimize your pre-ride routine and maintain peak mechanical integrity.</p>
           <a href="maintenance.html" class="btn btn-link">Open checklist</a>
         </div>
       </div>
@@ -114,8 +178,9 @@
 
     <section class="section container cta-slab">
       <div class="cta-slab-inner">
-        <h4>Ready to ride better?</h4>
-        <p>Access our premium guides and start treating your motorcycle to the service it deserves.</p>
+        <h4>Ready to elevate your ride?</h4>
+        <p>Unlock premium rider intelligence and transform your motorcycle knowledge forever.</p>
+
         <div>
           <a href="resources.html" class="btn btn-primary">Get Resources</a>
           <a href="maintenance.html" class="btn btn-outline">Maintenance Planner</a>
@@ -128,7 +193,7 @@
     <div class="container footer-grid">
       <div>
         <strong>Motorcycle Guide Center</strong>
-        <p class="muted">Built with precision. Trusted by riders worldwide.</p>
+        <p class="muted">Engineered for precision. Trusted worldwide.</p>
       </div>
 
       <nav aria-label="Footer">
@@ -146,12 +211,13 @@
   </footer>
 
   <script>
-    (function(){
+    (function() {
       const header = document.querySelector('.site-header');
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
-      document.addEventListener('scroll', onScroll, {passive:true});
+      document.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
     })();
   </script>
+
 </body>
 </html>
